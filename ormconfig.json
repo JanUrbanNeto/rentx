@@ -7,14 +7,14 @@
    "database": "rentx-database",
    
    "entities": [
-      "./src/modules/**/entities/*.ts"
+      "./src/modules/**/infra/typeorm-folder/entities/*.ts"
    ],
    
    "migrations": [
-      "./src/database/migrations/*.ts"
+      "./src/shared/infra/typeorm-folder/migrations/*.ts"
    ],
    
    "cli": {
-      "migrationsDir": "./src/database/migrations"
+      "migrationsDir": "./src/shared/infra/typeorm-folder/migrations"
    }
 }
