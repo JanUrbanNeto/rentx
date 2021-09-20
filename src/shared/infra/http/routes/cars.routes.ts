@@ -8,8 +8,10 @@ const carsRoutes = Router();
 
 const createCarController = new CreateCarController();
 const listAvailableCarsController = new ListAvailableCarsController();
+const createCarSpecificationController = new CreateCarController()
 
 carsRoutes.post("/", ensureAuthenticated, ensureAdmin, createCarController.handle);
 carsRoutes.get("/available", listAvailableCarsController.handle);
+carsRoutes.post("/specifications/:id", ensureAuthenticated, ensureAdmin, createCarSpecificationController.handle);
 
 export { carsRoutes }
