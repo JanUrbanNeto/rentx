@@ -19,7 +19,7 @@ class SpecificationRepositoryInMemory implements ISpecificationsRepository {
    }
 
    async findByName(name: string): Promise<Specification> {
-      return this.specifications.find((specification) => specification.name === name)
+      return this.specifications.find(specification => specification.name === name)
    }
 
    async list(): Promise<Specification[]> {
@@ -28,7 +28,7 @@ class SpecificationRepositoryInMemory implements ISpecificationsRepository {
 
    async findByIds(ids: string[]): Promise<Specification[]> {
       const selectedSpecifications = this.specifications.filter(
-         (specification) => ids.includes(specification.id)
+         specification => ids.includes(specification.id)
       );
 
       return selectedSpecifications;
