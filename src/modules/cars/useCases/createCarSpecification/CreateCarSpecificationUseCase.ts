@@ -1,6 +1,6 @@
 import { inject, injectable } from "tsyringe";
 import { AppError } from "../../../../errors/AppError";
-import { Car } from "../../infra/typeorm-folder/entities/car";
+import { Car } from "../../infra/typeorm-folder/entities/Car";
 import { CarsRepository } from "../../infra/typeorm-folder/repositories/CarsRepository";
 import { SpecificationsRepository } from "../../infra/typeorm-folder/repositories/SpecificationsRepository";
 import { ICarsRepository } from "../../repositories/ICarsRepository";
